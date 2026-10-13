@@ -1,0 +1,41 @@
+body {
+    background-color: #291423;
+    font-family: "Atkinson Hyperlegible";
+    font-size: 20px;
+    color: #EBC5CD;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Figtree";
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+#hero {
+    background-color: #EBC5CD;
+    font-size: 30px;  
+    color: #9E4488;
+    text-align: center;
+    padding: 50px;
+}
+
+#hero img {
+    width: 480px;
+}
+
+#bio {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #EBC5CD;
+}
