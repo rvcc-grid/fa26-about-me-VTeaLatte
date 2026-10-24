@@ -1,0 +1,22 @@
+html{
+    background-color: #9e4488;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Figtree";
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    color: #dbd190
+}
+
+ul{
+    background-color: #dbd190;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 40px;
+
+    font-family: "Atkinson Hyperlegible";
+    font-size: 20px;
+    color: #575330;
+}
