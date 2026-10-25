@@ -1,0 +1,44 @@
+html{
+    background-color: #4F6323;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Figtree";
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    color: #dbd190
+}
+
+body{
+    font-family: "Atkinson Hyperlegible";
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.sketch-1-640w {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 20px solid #ebc5cd;
+}
+
+.sketch-2-640w {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 20px solid #ffffff;
+}
+
+.sketch-3-640w {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 20px solid #ebc5cd;
+}
+
+figcaption{
+    margin: 10px;
+    margin-bottom: 70px;
+}
