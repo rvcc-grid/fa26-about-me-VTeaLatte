@@ -6,11 +6,16 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+h2 {
+    margin: .1em;
+}
+
 body {
     background-color: #9e4488;
     font-family: "Atkinson Hyperlegible";
     font-size: 20px;
-    color: #EBC5CD;
+    color: #ffffff;
+    text-align: center;
 }
 
 /*HEADER*/
@@ -29,7 +34,7 @@ header {
 }
 
 #hero img {
-    width: 480px;
+    max-width: 100%;
 }
 
 #bio {
@@ -43,35 +48,35 @@ header {
 #hobby {
     padding-top: 100px;
     padding-bottom: 100px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    }
 
-ul {
-    background-color: #dbd190;
-    margin-left: 200px;
-    margin-right: 200px;
-    padding: 40px;
-    text-align: start;
-    color: #575330;
-}
 
-/*PHOTO GALLERY SECTION*/
-.sketch {
+
+/*GALLERY SECTION*/
+#gallery img {
+    max-width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 20px solid #ebc5cd;
+    border: 10px solid #ebc5cd;
+}
+
+#gallery {
+    padding-bottom: 100px;
 }
 
 figcaption{
-    color: #ffffff;
-    text-align: center;
     margin: 10px;
     margin-bottom: 70px;
 }
 
 /*ARTICLE SECTION*/
-article {
-    color: #ffffff;
+#lit div {
+    max-width: 40rem;
+    margin: 0 auto;
 }
 
 /*FOOTER*/
@@ -79,4 +84,20 @@ footer {
     text-align: center;
     padding: 20px;
     color: #EBC5CD;
+}
+
+@media screen and (min-width: 60em) {
+    figure { 
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 4rem;
+    }
+    
 }
