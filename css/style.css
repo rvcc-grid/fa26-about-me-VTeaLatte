@@ -24,14 +24,17 @@ header {
 }
 
 /* MAIN BOX */
-main {
-    background-color: #ebc5cd;
-    padding: 1em;
+main, #hobby {
+    background-color:#ebc5cd;
+    padding:1em;
+    box-shadow:-10px 10px 20px rgba(0,0,0,.5);
+    margin-bottom:2rem;
+    border:2px solid #ffffff;
+    border-radius:1rem;
 }
 
 /*HERO SECTION*/
 #hero {
-    background-color: #dbd190;
     font-weight: 900;
     font-size: 30px;  
     color: #9e4488;
@@ -44,13 +47,20 @@ main {
 }
 
 #bio {
-    background-color: #dbd190;
     color: #291523;
     text-align: center;
     padding: 20px;
 }
 
 /*HOBBY LIST SECTION*/
+#hobby h2 {
+    color: #9e4488;
+}
+
+#hobby li {
+    color: #291523;
+}
+
 #hobby {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -65,20 +75,25 @@ main {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 10px solid #ebc5cd;
+    border: 3px solid #ebc5cd;
     border-radius: 2rem;
 }
 
 #gallery {
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-figcaption{
+figcaption {
     margin-top: 10px;
     margin-bottom: 70px;
 }
 
 /*ARTICLE SECTION*/
+#lit {
+    padding-bottom: 50px;
+}
+
 #lit div {
     max-width: 40rem;
     margin: 0 auto;
@@ -91,9 +106,22 @@ figcaption{
     font-weight: 900;
     padding: .25rem;
     line-height: 0.65;
-    margin: 0.1em 0.1em 0.1rem
+    margin: 0.1em 0.1em 0.1rem;
 }
 
+/* VIDEO SECTION */
+#video {
+    padding-bottom: 50px;
+}
+
+#myVideo {
+    display: flex;
+    align-items: center;
+    aspect-ratio: 1/1;
+    max-width: 100%;
+    border: 3px solid #ebc5cd;
+    border-radius: 2rem;
+}
 
 /*FOOTER*/
 footer {
@@ -104,17 +132,22 @@ footer {
 
 /* Medium Screen Size */
 @media screen and (min-width: 60em) {
+    body {
+        max-width: 1200px;
+        margin:0 auto;
+    }
+
     figure { 
         display: grid;
         grid-template-columns: 2fr 1fr;
+
     }
 
     figcaption {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2rem;
-        margin-left: 4rem;
+        font-size: 1.8rem;
     }
 
     #lit div {
@@ -128,7 +161,8 @@ footer {
 @media screen and (min-width: 100em) {
     #gallery {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr; 
+        
     }
 
     hr {
@@ -139,7 +173,7 @@ footer {
         grid-column: 1/-1;
     }
 
-    figure {
+    #gallery figure {
         display: block;
     }
 }
