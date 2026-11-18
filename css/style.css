@@ -125,7 +125,7 @@ figcaption {
 
 /* FORM SECTION */
 form {
-    width: 500px;
+    max-width: 400px;
     margin: 0 auto;
     text-align: left;
     color: #291523;
@@ -224,6 +224,23 @@ footer {
         columns: 2rem;
         gap: 1em;
     }
+
+    fieldset {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+
+    legend {
+        grid-column: span 2;
+    }
+
+    .form-group
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+      }
 }
 
 /* Large screen size */
