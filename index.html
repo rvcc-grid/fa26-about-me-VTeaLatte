@@ -74,7 +74,7 @@
         </section>
 
 
-        <!-- Article -->
+        <!-- Article section -->
         <article id="lit">
             <h2>Excerpt from Alice in Wonderland</h2>
                 <div>
@@ -84,12 +84,70 @@
                 </div>
         </article>
 
+        <!-- Video section -->
         <section id="video">
             <h2>How I Made My Midterm Website</h2>
             <figure>
                 <iframe id="myVideo" width="560" height="315" src="https://www.youtube.com/embed/sCwIiDRKIeI?si=KsPrQvugbypB4dz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <figcaption>Briefly explaining the making of my midterm project.</figcaption>
             </figure>
+        </section>
+        
+        <!-- Contact section -->
+        <section id="contact">
+            <h2>Get in Contact!</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="a1ae1708-3aa5-4c58-b6a5-fc83e82dfcd1">
+                <input type="hidden" name="subject" value="New message from my About Me page">
+                <input type="hidden" name="redirect" value="https://rvcc-grid.github.io/fa26-about-me-VTeaLatte/thanks.html">
+
+                <fieldset>
+                    <legend>Got something to say?</legend>
+                    <div>
+                        <label for="email">Name*</label>
+                        <input type="text" name="name" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone</label>
+                         <input type="tel" name="phone">
+                        <select name="phone_type">
+                            <option value="">Select a type</option>
+                            <option value="mobile">Mobile</option>
+                            <option value="home">Home</option>
+                            <option value="work">Work</option>
+                        </select>
+                    </div>
+          
+                    <div>
+                        <label for="email">Message*</label>
+                        <textarea name="message" required></textarea>
+                    </div>
+
+                    <div>
+                        <p>Would you like a follow-up?</p>
+                        <ul>
+                            <input type="radio" name="followup" value="yes">
+                            <label for="followup-yes">Yes</label>
+    
+                            <input type="radio" name="followup" value="no">
+                            <label for="followup-no">No</label>
+                        </ul>
+                    </div>
+
+                    <div data-class="h-captcha" data-captcha="true"></div>
+                    <script src="https://web3forms.com/client/script.js" async defer></script>
+
+                    <button type="submit">Submit</button>
+
+                    <p class="desc_text">* indicates required content</p>
+                </fieldset>
+              </form>
         </section>
     <!-- Footer -->
     <footer>

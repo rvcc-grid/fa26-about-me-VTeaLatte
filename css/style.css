@@ -73,8 +73,7 @@ main, #hobby {
 #gallery img {
     max-width: 100%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     border: 3px solid #ebc5cd;
     border-radius: 2rem;
 }
@@ -92,6 +91,7 @@ figcaption {
 /*ARTICLE SECTION*/
 #lit {
     padding-bottom: 50px;
+    text-align: left;
 }
 
 #lit div {
@@ -123,6 +123,75 @@ figcaption {
     border-radius: 2rem;
 }
 
+/* FORM SECTION */
+form {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    color: #291523;
+}
+
+/* form box */
+fieldset {
+    border: solid 2px #ffffff;
+    border-radius: 2em;
+    background-color: #ebc5cd;
+}
+
+legend {
+    background-color: #E9EB70;
+    color: #9e4488;
+    padding: .5em;
+    border-radius: 2em;
+}
+
+/* input box labels */
+label {
+    display: block;
+    margin-top: .5em;
+}
+
+/* input boxes */
+input {
+    padding: .5em;  
+    font-family: "Atkinson Hyperlegible";  
+}
+
+input[type="radio"] + label {
+    display: inline-block;
+}
+
+input:focus, textarea:focus {
+    box-shadow: -10px 10px 20px rgba(0,0,0,.5);
+    background-color: #9e4488;
+    color: #E9EB70;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 15em;
+}
+
+/* submit box */
+button[type="submit"] {
+    padding: 1em;
+    background-color: #E9EB70;
+    border: none;
+    border-radius: 3em;
+    font-family: "Atkinson Hyperlegible";
+    color: #291523;
+    font-size: .9em;
+}
+
+button:focus {
+    background-color: #9e4488;
+    color: #ffffff;
+}
+
+.desc_text {
+    font-size: .8em;
+}
+
 /*FOOTER*/
 footer {
     text-align: center;
@@ -133,7 +202,7 @@ footer {
 /* Medium Screen Size */
 @media screen and (min-width: 60em) {
     body {
-        max-width: 1200px;
+        max-width: 1000px;
         margin:0 auto;
     }
 
@@ -153,8 +222,8 @@ footer {
     #lit div {
         display: flex;
         columns: 2rem;
+        gap: 1em;
     }
-    
 }
 
 /* Large screen size */
