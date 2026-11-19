@@ -1,0 +1,6 @@
+colors
+#9e4488
+#E9EB70
+#291523
+#ebc5cd
+#ffffff
