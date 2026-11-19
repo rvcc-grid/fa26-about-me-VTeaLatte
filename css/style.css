@@ -14,7 +14,7 @@ body {
     background-color: #9e4488;
     font-family: "Atkinson Hyperlegible";
     font-size: 20px;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
 }
 
@@ -89,17 +89,17 @@ figcaption {
 }
 
 /*ARTICLE SECTION*/
-#lit {
+#blog {
     padding-bottom: 50px;
     text-align: left;
 }
 
-#lit div {
+#blog div {
     max-width: 40rem;
     margin: 0 auto;
 }
 
-#lit div p:nth-child(3n+1)::first-letter {
+#blog div p:nth-child(3n+1)::first-letter {
     color: #ebc5cd;
     float: left;
     font-size: 5rem;
@@ -219,7 +219,7 @@ footer {
         font-size: 1.8rem;
     }
 
-    #lit div {
+    #blog div {
         display: flex;
         columns: 2rem;
         gap: 1em;
