@@ -223,6 +223,40 @@ button:focus {
 }
 
 /* ---------------------------------------- */
+/*SUCCESSFUL SENT MESSAGE PAGE*/
+#mes-success {
+    h1 {
+        color: #E9EB70;
+        margin: 2rem;
+    }
+
+    p {
+        background-color: #ebc5cd;
+        color: #9e4488;
+        max-width: 30rem;
+        padding: 1rem;
+        margin: 2rem auto 3rem ;
+    }
+
+    a {
+        background-color: #9e4488;
+        border: solid 2px #fff;
+        border-radius: 5rem;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        max-width: 30rem;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    a:focus {
+        background-color: #E9EB70;
+        color: #9e4488;
+    }
+}
+
+/* ---------------------------------------- */
 /*FOOTER*/
 footer {
     text-align: center;
