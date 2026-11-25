@@ -132,6 +132,8 @@ figcaption {
 /* VIDEO SECTION */
 #video {
     padding-bottom: 50px;
+    max-width: 60rem;
+    margin: 0 auto;
 }
 
 #myVideo {
@@ -146,7 +148,7 @@ figcaption {
 /* ---------------------------------------- */
 /* FORM SECTION */
 form {
-    max-width: 400px;
+    max-width: 50rem;
     margin: 0 auto;
     text-align: left;
     color: #291523;
@@ -250,9 +252,10 @@ button:focus {
         margin: 1rem auto;
     }
 
-    a:focus {
+    a:focus, a:hover {
         background-color: #E9EB70;
         color: #9e4488;
+        transition: .2s ease-in;
     }
 }
 
@@ -289,11 +292,6 @@ footer {
         display: flex;
         columns: 2rem;
         gap: 1em;
-    }
-
-    #video {
-        max-width: 60rem;
-        margin: 0 auto;
     }
 
     fieldset {
